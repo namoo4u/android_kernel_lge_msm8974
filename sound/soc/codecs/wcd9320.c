@@ -4168,6 +4168,10 @@ static int taiko_volatile(struct snd_soc_codec *ssc, unsigned int reg)
 #endif
 #endif
 
+	/* HPH PA Enable */
+	if (reg == TAIKO_A_RX_HPH_CNP_EN)
+		return 1;
+
 	if (reg == TAIKO_A_MBHC_INSERT_DET_STATUS)
 		return 1;
 
