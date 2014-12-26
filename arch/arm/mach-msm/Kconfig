@@ -3091,3 +3091,11 @@ config MSM_HOTPLUG
 	help
 	  The MSM hotplug driver controls on-/offlining of additional cores based
 	  on current cpu load.
+	  
+config MSM_RUN_QUEUE_STATS_BE_CONSERVATIVE
+	bool "Use a more conservative computation for RQ Stats"
+	depends on MSM_RUN_QUEUE_STATS
+	default n
+	help
+	  Enable more conservative computation of load and size of the run
+	  queue.
