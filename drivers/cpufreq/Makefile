@@ -7,6 +7,8 @@ obj-$(CONFIG_CPU_FREQ_STAT)             += cpufreq_stats.o
 obj-$(CONFIG_CPU_FREQ_GOV_PERFORMANCE)	+= cpufreq_performance.o
 obj-$(CONFIG_CPU_FREQ_GOV_ONDEMAND)	+= cpufreq_ondemand.o
 obj-$(CONFIG_CPU_FREQ_GOV_INTERACTIVE)	+= cpufreq_interactive.o
+obj-$(CONFIG_CPU_FREQ_GOV_HYPER)	+= cpufreq_HYPER.o
+obj-$(CONFIG_CPU_FREQ_GOV_OPTIMAX)	+= cpufreq_optimax.o
 
 # CPUfreq cross-arch helpers
 obj-$(CONFIG_CPU_FREQ_TABLE)		+= freq_table.o
