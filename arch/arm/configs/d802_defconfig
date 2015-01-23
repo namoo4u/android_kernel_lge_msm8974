@@ -1,8 +1,8 @@
 #
-# Tsu's Eternal Kernel (Credits to RenderBroken, REV3NT3CH, savoca, and dorimanx!)
+# Tsunami's eternalKernel (Credits to RenderBroken, REV3NT3CH, savoca, and dorimanx!)
 # Linux/arm 3.4.x Kernel Configuration
 #
-CONFIG_LOCALVERSION="-eternalKernelv1.0"
+CONFIG_LOCALVERSION="-eternalKernelv1.1"
 
 # CPU Frequency Options
 CONFIG_CPU_FREQ=y
@@ -25,6 +25,7 @@ CONFIG_IOSCHED_BFQ=y
 CONFIG_IOSCHED_CFQ=y
 CONFIG_IOSCHED_DEADLINE=y
 CONFIG_IOSCHED_FIOPS=y
+CONFIG_IOSCHED_ROW=y
 CONFIG_IOSCHED_SIO=y
 CONFIG_IOSCHED_VR=y
 CONFIG_IOSCHED_ZEN=y
@@ -35,7 +36,9 @@ CONFIG_DEFAULT_BFQ=y
 # CONFIG_DEFAULT_DEADLINE is not set
 # CONFIG_DEFAULT_FIOPS is not set
 # CONFIG_DEFAULT_NOOP is not set
+# CONFIG_DEFAULT_ROW is not set
 # CONFIG_DEFAULT_SIO is not set
+# CONFIG_DEFAULT_TEST is not set
 # CONFIG_DEFAULT_VR is not set
 # CONFIG_DEFAULT_ZEN is not set
 CONFIG_DEFAULT_IOSCHED="bfq"
@@ -96,7 +99,7 @@ CONFIG_KEXEC=y
 CONFIG_KEXEC_HARDBOOT=y
 # CONFIG_ATAGS_PROC is not set
 
-# End Eternal Differences
+# End Differences
 
 #
 CONFIG_ARM=y
