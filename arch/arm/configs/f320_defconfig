@@ -2,7 +2,7 @@
 # Tsunami's eternalKernel (Credits to RenderBroken, REV3NT3CH, savoca, and dorimanx!)
 # Linux/arm 3.4.x Kernel Configuration
 #
-CONFIG_LOCALVERSION="-eternalKernelv1.1"
+CONFIG_LOCALVERSION="-eternalKernelv1.2"
 
 # CPU Frequency Options
 CONFIG_CPU_FREQ=y
