@@ -355,9 +355,11 @@ CHECKFLAGS     := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ \
 		  -Wbitwise -Wno-return-void $(CF)
 
 KERNEL_FLAGS	= -marm -mtune=cortex-a15 -mfpu=neon-vfpv4 \
-		  -mvectorize-with-neon-quad -fgcse-after-reload -fgcse-sm \
-		  -fgcse-las -ftree-loop-im -ftree-loop-ivcanon -fivopts \
-		  -ftree-vectorize -fmodulo-sched -ffast-math
+				  -mvectorize-with-neon-quad -fgcse-after-reload -fgcse-sm \
+				  -fgcse-las -ftree-loop-im -ftree-loop-ivcanon -fweb \
+				  -frename-registers -ftree-loop-linear -ftree-vectorize \
+				  -fmodulo-sched -ffast-math -funsafe-math-optimizations \
+				  -std=gnu89
 
 MODFLAGS        = -DMODULE \
                   -mfpu=neon-vfpv4 \
