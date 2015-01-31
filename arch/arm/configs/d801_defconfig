@@ -2,7 +2,7 @@
 # Tsunami's eternalKernel (Credits to RenderBroken, REV3NT3CH, savoca, and dorimanx!)
 # Linux/arm 3.4.x Kernel Configuration
 #
-CONFIG_LOCALVERSION="-eternalKernel-v1.5"
+CONFIG_LOCALVERSION="-eternalKernel-v1.6"
 
 # CPU Frequency Options
 CONFIG_CPU_FREQ=y
@@ -96,11 +96,6 @@ CONFIG_BRICKED_THERMAL=y
 CONFIG_MSM_CPU_FREQ_MAX=2265600
 CONFIG_MSM_CPU_FREQ_MIN=300000
 CONFIG_MSM_CPU_FREQ_SET_MIN_MAX=y
-
-# Kexec Support
-CONFIG_KEXEC=y
-CONFIG_KEXEC_HARDBOOT=y
-# CONFIG_ATAGS_PROC is not set
 
 # End Differences
 
