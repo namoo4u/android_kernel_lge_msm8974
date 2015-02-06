@@ -386,11 +386,11 @@ LINUXINCLUDE    := -I$(srctree)/arch/$(hdr-arch)/include \
 
 KBUILD_CPPFLAGS := -D__KERNEL__
 
-CFLAGS_A15 = -mtune=cortex-a15 -mfpu=neon -funsafe-math-optimizations
+CFLAGS_A15 = -mtune=cortex-a15 -mfpu=neon -funsafe-math-optimizations -fgraphite -floop-flatten -ftree-loop-linear -floop-interchange -floop-strip-mine -floop-block
 CFLAGS_MODULO = -fmodulo-sched -fmodulo-sched-allow-regmoves
-KERNEL_MODS        = $(CFLAGS_A15) $(CFLAGS_MODULO)
+KERNEL_MODS        = $(CFLAGS_A15)
  
-KBUILD_CFLAGS   := -O3 -funswitch-loops \
+KBUILD_CFLAGS   := -O3 -funswitch-loops $(KERNEL_MODS) \
  		           -Wundef -Wstrict-prototypes -Wno-trigraphs \
  		           -fno-strict-aliasing -fno-common \
  		           -Werror-implicit-function-declaration \
